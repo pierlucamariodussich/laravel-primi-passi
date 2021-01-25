@@ -36,9 +36,9 @@
               <option value="Jazz">Jazz</option>
         </select>
       </div>
-
-      @foreach ($data['response'] as $disco)
-      <div class="cds-container container">        
+     
+      <div class="cds-container container"> 
+        @foreach ($data['response'] as $disco)       
           <!-- Disco ad esempio -->
           <div class="cd " >
               <img src="{{$disco['poster']}}" alt="">
@@ -46,9 +46,8 @@
               <span class="author">{{$disco['author']}}</span>
               <span class="year">{{$disco['year']}}</span>
           </div>
+          @endforeach
       </div> 
-      @endforeach
-
     </div>
 
   </body>
