@@ -13,7 +13,12 @@
       @include('common.header')
       @section('slider')
       @show
-      @include('common.footer')
-      
+      @section('vehicles')
+      @show
+      @section('tutorial')
+      @show
+      @section('information')
+      @show
+      @include('common.footer') 
   </body>
 </html>
